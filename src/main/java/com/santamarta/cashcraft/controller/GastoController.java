@@ -49,7 +49,7 @@ public class GastoController {
         return this.gastoService.updateGasto(gastoDTO);
     }
 
-    @PutMapping(value = "/delete")
+    @DeleteMapping (value = "/delete")
     public int deleteGasto(@RequestBody GastoDTO gastoDTO){
         return this.gastoService.deleteGasto(gastoDTO);
     }
